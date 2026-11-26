@@ -1,7 +1,7 @@
-import AcmeLogo from '@/app/ui/acme-logo';
-import LoginForm from '@/app/ui/login-form';
-import { Suspense } from 'react';
- 
+import AcmeLogo from "@/app/ui/acme-logo";
+import LoginForm from "@/app/ui/login-form";
+import { Suspense } from "react";
+
 export default function LoginPage() {
   return (
     <main className="flex items-center justify-center md:h-screen">
@@ -14,6 +14,10 @@ export default function LoginPage() {
         <Suspense>
           <LoginForm />
         </Suspense>
+        <div className="mt-4 rounded-lg bg-gray-50 p-4 text-sm text-gray-500">
+          <p> testId: user@nextmail.com </p>
+          <p> password: 123456 </p>
+        </div>
       </div>
     </main>
   );
